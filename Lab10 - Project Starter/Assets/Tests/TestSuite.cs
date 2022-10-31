@@ -17,6 +17,7 @@ namespace Tests
             Assert.AreEqual(result, 7);       
         }
 
+        //Test for Addition
         [UnityTest]
         public IEnumerator TestUnityAddition()
         {
@@ -26,6 +27,18 @@ namespace Tests
 
             result = Calculator.CalculatePair(5, 2, "+");
             Assert.AreEqual(result, 7);
+        }
+
+        //Test for Subtraction
+        [UnityTest]
+        public IEnumerator TestUnitySubtraction()
+        {
+            //Use the Assert class to test conditions
+            //Use yield to skip a frame
+            yield return null;
+
+            result = Calculator.CalculatePair(5, 2, "-");
+            Assert.AreEqual(result, 3);
         }
     }
 }
