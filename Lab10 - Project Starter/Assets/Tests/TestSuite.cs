@@ -40,5 +40,17 @@ namespace Tests
             result = Calculator.CalculatePair(5, 2, "-");
             Assert.AreEqual(result, 3);
         }
+
+        //Test for Multiplication
+        [UnityTest]
+        public IEnumerator TestUnityMultiplication()
+        {
+            //Use the Assert class to test conditions
+            //Use yield to skip a frame
+            yield return null;
+
+            result = Calculator.CalculatePair(5, 2, "*");
+            Assert.AreEqual(result, 10);
+        }
     }
 }
